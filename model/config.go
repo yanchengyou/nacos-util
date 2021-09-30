@@ -3,9 +3,9 @@ package model
 import "fmt"
 
 type Config struct {
+	Host     string `json:"host"`
 	Username string `json:"username"`
 	Password string `json:"password"`
-	Host     string `json:"host"`
 }
 
 func (c Config) String() string {
